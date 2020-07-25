@@ -1,0 +1,1 @@
+docker run -itd -p 3306:3306 --name masterdb -v /Users/mingdzhang/personal/mysql-master-slave/master/cnf:/etc/mysql/conf.d -v /Users/mingdzhang/personal/mysql-master-slave/master/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=masterpwd d05c76dbbfcf

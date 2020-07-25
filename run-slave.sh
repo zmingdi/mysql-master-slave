@@ -1,0 +1,1 @@
+docker run -itd -p 3307:3306 --name slavedb -v /Users/mingdzhang/personal/mysql-master-slave/slave/cnf:/etc/mysql/conf.d -v /Users/mingdzhang/personal/mysql-master-slave/slave/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=slavepwd d05c76dbbfcf
