@@ -38,21 +38,36 @@ root@fbc7e934f424:/# mysql -u root -pslavepwd
  >  
  > find master container ip info with **'cat /etc/hosts'**  command 
 
-9. start up slave process in slave db container
- >mysql> start slave; 
+9. start up slave process in slave db container 
+
+ >mysql> start slave;  
+ 
  > Query OK, 0 rows affected (0.03 sec) 
+ 
  > mysql> show slave status\G 
+ 
  >          Slave_IO_State: Waiting for master to send event 
+ 
  >             Master_Host: 172.17.0.2 
+ 
  >             Master_User: reader 
+ 
  >             Master_Port: 3306 
+ 
  >           Connect_Retry: 60 
+ 
  >         Master_Log_File: mysql-bin.000003 
+ 
  >     Read_Master_Log_Pos: 765 
+ 
  >          Relay_Log_File: b3a8ba2fdc0c-relay-bin.000002 
+ 
  >           Relay_Log_Pos: 494 
+ 
  >   Relay_Master_Log_File: mysql-bin.000003 
+ 
  >    **    Slave_IO_Running: Yes ** 
+ 
  >    ** Slave_SQL_Running: Yes ** 
  
  >  ** as long as ‘Slave_IO_RUNNING' and 'Slave_SQL_Running' is 'Yes', it is working. 
