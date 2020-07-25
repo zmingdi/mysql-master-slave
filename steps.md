@@ -1,5 +1,6 @@
 1. download docker image mysql:5.7
 2. create master/slave conf/data folder 
+
     2. need to modify the container name.
     3. the mysql root user is created during start up process with password.
 3. create cnf/mysql.cnf file as configuration for master and slave db as folder presents.
